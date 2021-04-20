@@ -19,8 +19,9 @@ int mx_bubble_sort(char **arr, int size) {
 
 /*
 int main() {
-    char *arr[]= {"abc", "xyz", "ghi", "def"};
-    printf("%d", mx_bubble_sort(arr, 4));
+    char *arr[]= {"abc", "acb", "a"};
+    printf("%d", mx_bubble_sort(arr, 3));
 }
 */
+
 

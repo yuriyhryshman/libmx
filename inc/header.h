@@ -13,3 +13,5 @@ typedef struct s_list {
     } t_list;
 
 #endif
+
+void mx_print_strarr(char **arr, const char *delim);

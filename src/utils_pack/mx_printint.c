@@ -1,15 +1,10 @@
 #include <unistd.h>
 
-static void mx_printchar(char c) {
-    char s[2];
-    s[0] = c;
-    s[1] = '\0';
-    write(1, s, 1);
-}
-
+void mx_printchar(char c);
 
 void mx_printint(int n) {
-    if (n >= -2147483647 || n <= 2147483647) {
+    if (n >= -2147483648 || n <= 2147483647) {
+        if (n == 0) mx_printchar(48);
         int mp = 0;
         if (n < 0) mp = -1;
         else mp = 1;
@@ -19,6 +14,7 @@ void mx_printint(int n) {
         while (n != 0) {
             int gg = n % 10;
             n /= 10;
+            if ( gg < 0) gg *= - 1;
             arr[c] = 48 + gg;
             c++;
         }
@@ -37,6 +33,6 @@ void mx_printint(int n) {
 
 /*
 int main () {
-    mx_printint(2147483647);
+    mx_printint(21477);
 }
 */

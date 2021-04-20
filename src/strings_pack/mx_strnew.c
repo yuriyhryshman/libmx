@@ -13,11 +13,10 @@ char *mx_strnew(const int size) {
 
 /*
 int main() {
-    int size = 10;
+    int size = 0;
     char *str = mx_strnew(size);
-    // for (int i = 0; i < size; i++) {
-    //     str[i] = 'a';
-    // }
     printf("%s\n", str);
 }
 */
+
+

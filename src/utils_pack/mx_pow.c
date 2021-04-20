@@ -3,7 +3,7 @@
 double mx_pow(double n, unsigned int pow) {
     if (pow == 0) return 1;
     double a = 1;
-    for (int i = 0; i < pow; i++) {
+    for (unsigned int i = 0; i < pow; i++) {
         a *= n;
     }
     return a;
@@ -12,6 +12,8 @@ double mx_pow(double n, unsigned int pow) {
 
 /*
 int main() {
-    printf("%f", mx_pow(2, 0));
+    printf("%f", mx_pow(5, 3));
 }
 */
+
+
