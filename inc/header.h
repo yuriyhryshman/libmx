@@ -15,3 +15,4 @@ typedef struct s_list {
 #endif
 
 void mx_print_strarr(char **arr, const char *delim);
+char *mx_strncpy(char *dst, const char *src, int len);
