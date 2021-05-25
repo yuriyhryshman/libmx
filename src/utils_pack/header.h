@@ -6,7 +6,6 @@
 #include <stdbool.h>
 #include <fcntl.h>
 #include <limits.h>
-#include <stdio.h>
 
 typedef struct s_list { 
     void *data;
