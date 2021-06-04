@@ -1,7 +1,5 @@
-// #include "header.h"
-#include <stdio.h>
+#include "header.h"
 
-int mx_strlen(const char *s);
 
 void mx_str_reverse(char *s) {
     int len = mx_strlen(s);

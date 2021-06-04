@@ -13,7 +13,8 @@ void mx_print_strarr(char **arr, const char *delim) {
     mx_printchar('\n');
 }
 
-
 int main() {
-
+    char *print_strarr[5] = {"abc", "xyz", "ghi", "def", NULL};
+    mx_print_strarr(print_strarr, " ");
 }
+

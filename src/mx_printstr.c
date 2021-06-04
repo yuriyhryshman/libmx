@@ -1,5 +1,4 @@
-#include <unistd.h>
-#include <stdio.h>
+#include "header.h"
 
 int mx_strlen(const char *s);
 void mx_printstr(const char *s) {

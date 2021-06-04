@@ -1,6 +1,4 @@
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
+#include "header.h"
 
 int mx_strlen(const char *s);
 char *mx_strnew(const int size);

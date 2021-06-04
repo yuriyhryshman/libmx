@@ -1,6 +1,5 @@
-#include <unistd.h>
+#include "header.h"
 
-void mx_printchar(char c);
 
 void mx_printint(int n) {
     if (n >= -2147483648 || n <= 2147483647) {

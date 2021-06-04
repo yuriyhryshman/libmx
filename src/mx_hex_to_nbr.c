@@ -1,15 +1,4 @@
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
-
-
-int mx_strlen(const char *s) {
-    int i = 0;
-    while (s[i] != '\0') {
-        i++;
-    }
-    return i;
-}
+#include "header.h"
 
 unsigned long mx_hex_to_nbr(const char *hex) {
     long long length = mx_strlen(hex);

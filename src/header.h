@@ -20,3 +20,6 @@ char *mx_strncpy(char *dst, const char *src, int len);
 void mx_str_reverse(char *s);
 char *mx_strnew(const int size);
 int mx_strlen(const char *s);
+void mx_printchar(char c);
+void mx_printstr(const char *s);
+
