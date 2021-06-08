@@ -8,11 +8,10 @@ int mx_get_char_index(const char *str, char c) {
     }
 
     return i;
-
 }
 
 int main() {
     char *str = "Follow and the white rabbit";
-    char c =  "w";
+    char c =  'H';
     printf("%d", mx_get_char_index(str, c));
 }
