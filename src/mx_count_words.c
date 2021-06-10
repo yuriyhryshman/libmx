@@ -4,7 +4,7 @@ int mx_count_words(const char *str, char c) {
     int count = 0;
     int k = 0;
 
-    if (!str) {
+    if (str != NULL) {
         for (int i = 0; str[i] != '\0'; i++) {
             if (str[i] == c) {
                 count++;
@@ -13,22 +13,24 @@ int mx_count_words(const char *str, char c) {
         }
 
         if (str[0] != c && str[k+1] != '\0') {
-            count *= 2;
+            count++;
+            return count;
         }
 
-        else if (str[0] != c && str[k+1] == '\0') {
-            count = (count*2) - 1;
+        else if ((str[0] != c && str[k+1] == '\0') || (str[0] == c && str[k+1] != '\0')) {
+            return count;
         }
 
-        else count = (count*2) - 2;
+        else count--;
 
         return count;
     }
-    return -1;
+    else return -1;
 }
 
+/*
 int main() {
-    // char *str = " follow * the white rabbit ";
-    printf("%d", mx_count_words(NULL, ' '));
+    char *str = " follow * the white rabbit ";
+    printf("%d", mx_count_words(str, '*'));
 }
-
+*/

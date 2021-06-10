@@ -3,15 +3,20 @@
 int mx_get_char_index(const char *str, char c) {
     int i = 0;
 
-    while (str[i] != c) {
-        i++;
+    if (str != NULL) {
+        for (; str[i]; i++) {
+            if (str[i] == c) return i+1;
+        }
+        return -1;
     }
-
-    return i;
+    return -2;
 }
 
+
+/*
 int main() {
     char *str = "Follow and the white rabbit";
-    char c =  'H';
+    char c =  '?';
     printf("%d", mx_get_char_index(str, c));
 }
+*/
