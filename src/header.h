@@ -7,6 +7,7 @@
 #include <fcntl.h>
 #include <limits.h>
 #include <stdio.h>
+#include <malloc/malloc.h>
 
 typedef struct s_list { 
     void *data;
@@ -23,4 +24,18 @@ int mx_strlen(const char *s);
 void mx_printchar(char c);
 void mx_printstr(const char *s);
 int mx_strncmp(const char *str1, const char *str2, size_t n);
+char *mx_strstr(const char *haystack, const char *needle);
+char *mx_strtrim(const char *str);
+char *mx_strndup(const char *s1, size_t n);
+bool mx_isspace(int c);
+char *mx_del_extra_spaces(const char *str);
+
+void *mx_memset(void *b, int c, size_t len);
+void *mx_memcpy(void *restrict dst, const void *restrict src, size_t n);
+int mx_memcmp(const void *s1, const void *s2, size_t n);
+void *mx_realloc(void *ptr, size_t size);
+void *mx_memmove(void *dst, const void *src, size_t len);
+void *mx_memrchr(const void *s, int c, size_t n);
+void *mx_memccpy(void *restrict dst, const void *restrict src, int c, size_t n);
+
 

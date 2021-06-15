@@ -23,4 +23,5 @@ int mx_strlen(const char *s);
 void mx_printchar(char c);
 void mx_printstr(const char *s);
 int mx_strncmp(const char *str1, const char *str2, size_t n);
-
+char *mx_strstr(const char *haystack, const char *needle);
+char *mx_strtrim(const char *str);

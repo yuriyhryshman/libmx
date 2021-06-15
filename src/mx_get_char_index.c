@@ -5,7 +5,7 @@ int mx_get_char_index(const char *str, char c) {
 
     if (str != NULL) {
         for (; str[i]; i++) {
-            if (str[i] == c) return i+1;
+            if (str[i] == c) return i;
         }
         return -1;
     }
