@@ -1,10 +1,8 @@
 #include "header.h"
 
 void *mx_memcpy(void *restrict dst, const void *restrict src, size_t n) {
-    unsigned char *dest = dst;
-    const char *source = src;
     for (size_t i = 0; i < n; i++) {
-        dest[i] = source[i];
+        ((unsigned char *)dst)[i] = ((const unsigned char *)src)[i];
     }
     return dst;
 }

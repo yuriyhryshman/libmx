@@ -1,10 +1,7 @@
 #include "header.h"
 
 void mx_printchar(char c) {
-    char s[2];
-    s[0] = c;
-    s[1] = '\0';
-    write(1, s, 1);
+    write(1, &c, 1);
 }
 
 /*
@@ -13,4 +10,3 @@ int main () {
     mx_printchar(c);
 }
 */
-
