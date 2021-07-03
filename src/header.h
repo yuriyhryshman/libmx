@@ -41,3 +41,7 @@ void *mx_memchr(const void *s, int c, size_t n);
 void *mx_memmem(const void *big, size_t big_len, const void *little, size_t little_len);
 void mx_print_unicode(wchar_t c);
 int mx_quicksort(char **arr, int left, int right);
+int mx_count_words(const char *str, char c);
+int mx_count_substr(const char *str, const char *sub);
+int mx_get_substr_index(const char *str, const char *sub);
+

@@ -1,49 +1,27 @@
 #include "header.h"
 
 char *mx_strtrim(const char *str) {
-    int i = 0;
-    int strlen = mx_strlen(str);
-    
-    if (mx_isspace(str[i]) == 0 && mx_isspace(str[strlen]) == 0) return NULL;
+    char *newStr;
+    int len;
 
-    while (mx_isspace(str[strlen] == 1)) {
-        strlen--;
-    }
-    return mx_strndup(str, strlen);
-    
+    if (!str) return NULL;
 
-    while (mx_isspace(str[i] == 1)) {
-        i++;
+    for (; mx_isspace(*str); str++) len = mx_strlen(str);
+
+    for (int i = len - 1; mx_isspace(str[i]); i--, len++);
+
+    if (len < 0) {
+        newStr = mx_strnew(0);
+        return newStr;
     }
-    return mx_strndup(str, (strlen - i));
-    
+
+    newStr = mx_strnew(len);
+    newStr = mx_strncpy(newStr, str, len);
+    return newStr;
 }
 
-char *mx_strtrim(const char *str){
-    int c = 0;
-    while (mx_isspace(str[c])) c++;
-
-    char *t = mx_strnew(mx_strlen(str) - c);
-
-    for (int i = 0; i < mx_strlen(str) - c; i++)
-        t[i] = str[c + i];
-
-    c = mx_strlen(t) - 1;
-
-    while (mx_isspace(t[c])) c--;
-
-    char *r = mx_strnew(c + 1);
-
-    for (int i = 0; i < c + 1; i++)
-        r[i] = t[i];
-
-    mx_strdel(&t);
-    
-    return r;
+int main() {
+    char *name = "My name... is Neo \t\n ";
+    printf("%s", mx_strtrim(name));
 }
-
-// int main() {
-//     char *name = "\f My name... is Neo \t\n ";
-//     printf("%s", mx_strtrim(name));
-// }
 
