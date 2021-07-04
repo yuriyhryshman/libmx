@@ -20,8 +20,9 @@ char *mx_strtrim(const char *str) {
     return newStr;
 }
 
+/*
 int main() {
-    char *name = "My name... is Neo \t\n ";
+    char *name = "\f  My name... is Neo \t\n ";
     printf("%s", mx_strtrim(name));
 }
-
+*/
