@@ -47,3 +47,13 @@ int mx_get_substr_index(const char *str, const char *sub);
 char **mx_strsplit(const char *s, char c);
 char *mx_replace_substr(const char *str, const char *sub, const char *replace);
 char *mx_strcpy(char *dst, const char *src);
+char *mx_file_to_str(const char *file);
+int mx_read_line(char **lineptr, size_t buf_size, char delim, const int fd);
+t_list *mx_create_node(void *data);
+void mx_push_front(t_list **list, void *data);
+void mx_pop_front(t_list **head);
+
+
+
+
+
