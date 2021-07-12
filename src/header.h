@@ -45,4 +45,5 @@ int mx_count_words(const char *str, char c);
 int mx_count_substr(const char *str, const char *sub);
 int mx_get_substr_index(const char *str, const char *sub);
 char **mx_strsplit(const char *s, char c);
-
+char *mx_replace_substr(const char *str, const char *sub, const char *replace);
+char *mx_strcpy(char *dst, const char *src);

@@ -24,6 +24,6 @@ char **mx_strsplit(const char *s, char c) {
 /*
 int main() {
     const char *s = "**Good bye,**Mr.*Anderson.****";
-    printf("%s", mx_strsplit(s, '*'));
+    printf("%c\n", **mx_strsplit(s, '*'));
 }
 */
