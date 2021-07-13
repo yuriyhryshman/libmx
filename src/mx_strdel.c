@@ -1,4 +1,4 @@
-#include "header.h"
+#include "libmx.h" 
 
 void strdel(char **str) {
     if (str && *str){

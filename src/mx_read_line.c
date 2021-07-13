@@ -1,4 +1,4 @@
-#include "header.h"
+#include "libmx.h" 
 
 static void *mx_realloc2(void *ptr, size_t size) {
     char *new = mx_strnew(size);

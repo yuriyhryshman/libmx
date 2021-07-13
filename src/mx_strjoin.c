@@ -1,4 +1,4 @@
-#include "header.h"
+#include "libmx.h" 
 
 char *mx_strjoin(const char *s1, const char *s2) {
     

@@ -1,6 +1,4 @@
-#include "header.h"
-
-int mx_strlen(const char*);
+#include "libmx.h" 
 
 char *mx_strcat(char *s1, const char *s2) {
     int i = mx_strlen(s1);

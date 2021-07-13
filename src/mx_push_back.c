@@ -1,4 +1,4 @@
-#include "header.h"
+#include "libmx.h" 
 
 void mx_push_back(t_list **list, void *data) {
     t_list *back_list = mx_create_node(data);

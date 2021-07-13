@@ -1,4 +1,4 @@
-#include "header.h"
+#include "libmx.h" 
 
 char *mx_strtrim(const char *str) {
     char *newStr;

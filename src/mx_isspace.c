@@ -1,4 +1,4 @@
-#include <stdbool.h>
+#include "libmx.h" 
 
 bool mx_isspace(int c) {
     return c == ' ' ||

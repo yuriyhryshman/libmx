@@ -1,5 +1,4 @@
-#include "header.h"
-// #include <stdio.h>
+#include "libmx.h" 
 
 char *mx_nbr_to_hex(unsigned long nbr) {
     unsigned long number = nbr;

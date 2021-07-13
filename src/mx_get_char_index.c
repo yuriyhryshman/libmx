@@ -1,4 +1,4 @@
-#include "header.h"
+#include "libmx.h" 
 
 int mx_get_char_index(const char *str, char c) {
     int i = 0;
